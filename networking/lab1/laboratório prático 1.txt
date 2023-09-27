@@ -1,0 +1,61 @@
+!Configurando Switch S1
+enable (acesso ao modo privilegiado)
+configure terminal (acesso para fazer alterações do switch)
+hostname S1 (alerar o nome do switch)
+enable secret class (comando para criptografar a senha)
+line console 0
+password cisco (comando para colocar senha no switch)
+login
+exit
+ip address 192.169.1.1 255.255.255.0 (endereço IP S1 e máscara)
+no shutdown 
+banner motd #Acesso proibido# (adicionar mensagem)
+show running-config (mostrar as configurações do switch)
+show ip int brief (mostrar IP de interface)
+
+!Configurando Switch S2
+enable
+configure terminal
+hostname S2
+enable secret class
+line console 0
+password cisco
+login
+exit
+ip address 192.169.1.2 255.255.255.0
+no shutdown
+banner motd #Acesso proibido#
+show running-config
+show ip int brief
+
+--> mesmas configurações do primeiro mas mudando os números
+
+ping-->
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ping 192.168.1.1
+
+Pinging 192.168.1.1 with 32 bytes of data:
+
+Request timed out.
+Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.1:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+C:\>ping 192.168.1.2
+
+Pinging 192.168.1.2 with 32 bytes of data:
+
+Request timed out.
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+Reply from 192.168.1.2: bytes=32 time<1ms TTL=255
+
+Ping statistics for 192.168.1.2:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms

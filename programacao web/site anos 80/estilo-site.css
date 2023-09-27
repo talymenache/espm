@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-image: url(./imagens/fundo.gif);
+}
+.limitador {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    padding: 8px;
+}
+h5 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 10px;
+}
+.cor1{
+    color: red
+}
+.cor2{
+    color: rgb(47, 255, 50);
+}
+.cor3{
+    color: rgb(106, 83, 234);
+}
+.tamanho{
+    font-weight: 500;
+    font-size: 25px;
+}
+.branco{
+    color:white;
+}
+.titulo{
+    background-color: whitesmoke;
+    font-style: italic;
+}
+.laranja{
+    background-color: orange;
+}
+.cor-letra{
+    color: orange;
+}
+.fundo{
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/07/james-webb-galaxias-.png);
+    padding: 20px;
+}
+.fundo-verde{
+    background-color: rgb(47, 255, 50);
+    font-weight: 650;
+}
+.fundo-azul{
+    background-color: blue;
+}
+.esquerda{
+    text-align: left;
+}
+.fundo > p:first-child{
+    margin-top: 0px
+}
+.fundo > p:last-child{
+    margin-bottom: 0px
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    color:lime;
+    background-color: black;
+}
+a:focus {
+    color: brown;
+    background-color: aquamarine;
+    outline: none;
+}

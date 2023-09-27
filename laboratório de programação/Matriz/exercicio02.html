@@ -1,0 +1,45 @@
+<script>
+// Escreva um programa em JavaScript que preencha uma matriz D 10x10 com valores
+// aleatórios entre 0 e 1000. Imprima o maior valor armazenado bem como a sua
+// localização (linha e coluna). Observação: caso o maior valor se repetida dentro da
+// matriz, todas as localizações deverão ser impressas
+
+    let m = new Array(10)
+    for (let i = 0; i < m.length; i++) {
+        m[i] = new Array(10)
+
+        for (let j = 0; j < m.length; j++) {
+            m[i][j] = Math.floor(Math.random() * 1000)
+        }
+    }
+    
+    console.table(m);
+
+    let aux= 0
+    // localização do maior elemento
+    for(let i=0; i < m.length; i++) {
+
+        for(j=0; j < m.length; j++) {
+
+            if(aux < m[i][j]){
+                
+                aux = m[i][j]
+            }
+
+        }
+    }
+    console.log("o maior elemento é: " + aux)
+
+//
+    for(let i=0; i < m.length; i++) {
+
+        for(j=0; j < m.length; j++) {
+
+            if(aux == m[i][j]){
+                console.log("linha " + i + " coluna " + j)
+            }
+
+        }
+    }
+
+</script>

@@ -1,0 +1,26 @@
+body{
+    font-family:Roboto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: blue;
+}
+p{
+    color:orange;
+}
+ul{
+    color: green
+}
+.alerta-perigo{
+    background-color: red;
+    color: gray;
+}
+.amarelao {
+    background-color: yellow;
+}
+.limitador {
+    max-width: 1200px;
+    margin: 0px auto;
+}

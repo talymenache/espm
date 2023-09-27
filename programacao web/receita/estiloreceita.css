@@ -1,0 +1,39 @@
+body{
+    font-family: Roboto;
+    text-align: center;
+}
+.limitador {
+    max-width: 600px;
+    margin: 0 auto; /* centralizacao na horizontal */
+}
+img {
+    max-width: 100%;
+}
+.categorias{
+    color:#d4c8c7;
+    font-size: 20px;
+    /* width: 100%; */
+}
+.texto{
+    background-color: #e4dcdb;
+    font-size: 18px;
+   
+    padding: 12px;
+    text-align: left;
+   /*  width: 100%; */
+}
+.titulo-receita{
+    color: rgb(228, 137, 72);
+    font-size: 40px;
+}
+.centralizar3{
+    margin-left: 0.4cm;
+    padding: 12px;
+    text-align: left;
+}
+h1{
+    color: rgb(228, 137, 72);
+}
+h2{
+    color: rgb(228, 137, 72);
+}

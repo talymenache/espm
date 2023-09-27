@@ -1,0 +1,43 @@
+<script>
+
+    let lin_a = parseInt(prompt("Total de linhas da matriz A"))
+    let col_a = parseInt(prompt("Total de colunas da matriz A"))
+    const lin_b = col_a
+    let col_b = parseInt(prompt("Total de colunas da matriz B"))
+    const lin_c = lin_a
+    const col_c = col_b
+
+    let a = new Array(lin_a)
+    let b = new Array(lin_b)
+    let c = new Array(lin_c)
+    let soma
+
+    preencher(a, lin_a, col_a)
+    console.table(a)
+    preencher(b, lin_b, col_b)
+    console.table(b)
+
+    for(let i = 0; i<lin_a; i++){
+        for(let j = 0; j<col_b; j++){
+            soma = 0
+            c[i] = new Array(col_b)
+            for(k = 0; k<col_a; k++){
+                soma += a[i][k] * b[k][j]
+            }
+            c[i][j] = soma
+        }
+    }
+
+    console.log
+    console.table(c)
+
+    function preencher(m, lin, col){
+        for(let i=0; i< a.length; i++) {
+            m[i]= new Array(col)
+            for(let j = 0; j < a.length; j++){
+                m[i][j] = parseInt(Math.random() * 4)
+            }
+        }
+    } 
+
+</script>

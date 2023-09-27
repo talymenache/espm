@@ -1,0 +1,47 @@
+etapa 1-->
+- categoria de dispositivos intermediários
+roteadores, switches, hubs, sem fio, segurança, wan
+- dispositivos finais: 7 tipos diferentes
+- dispositivos intermediários: 6 tipos diferentes
+- dispositivos finais que não são computadores de mesa (desktops): 10
+- tipos de conexão de meio:
+cabo de conexão direto
+conexôes sem fio(wireless)
+coaxial
+serial
+
+etapa 2-->
+- cliente servidor
+as aplicações ficam no servidor e acessíveis pelos clientes (computadoes pessoais, celulares e etc), em uma relação muitos para um ou muitos para muitos
+- funções de dispositivos intermediários
+interconectar dispositivos finais ou intermediários
+detectar erros no transporte dos dados
+determinar o melhorcaminho entre dois pontos na rede
+-escolha o tipo de meio:
+financeiro
+velocidade
+largura de banco
+interferência (ruído)
+qualidade na transmissão (QoS)
+
+etapa 3-->
+A) LAN- rede de área local
+- geograficamente os dispositivos estão próximos (raio de 10km)
+- a interconectados por IP´s privados (não roteáveis)
+- alta disponibilidade e performance
+- gerenciada e controlada por o mesmo admnistração de rede
+
+WAN- rede de área de longa distância
+- geograficamente dispositivos wm um raio acima de 10km
+- latência maior (atraso)
+- largura de banda menor
+- menor performance 
+
+B e C) Na topologia temos 2 WAN´s (duas nuvens) e 3 LAN´s (home office, 
+branch e central)
+
+D) Definição de Internet: rede de redes, malha de roteadores, a maior de todas de redes
+
+E) Conexão de internet residencial: dsl, dial up, celular, rádio, satélite
+
+F) Conexão empresarial: adsl, satélite, rádio, ethernet

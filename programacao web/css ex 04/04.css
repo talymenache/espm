@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+.limitador {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.fundo1 {
+    background-image: url(./images/fundo\ triangulo.jpg);
+    padding: 70px ;
+    min-height: 100%;
+}
+.fundo1 > p:first-child{
+    margin-top: 0px
+}
+.fundo1 > p:last-child{
+    margin-bottom: 0px
+}
+
+h1{
+    color: rgb(255, 58, 91);
+    font-size: 60px;
+    padding: 12px;
+    font-weight: 3000;
+}
+
+.branco {
+    color: white;
+}
+
+.fundo2 {
+    padding: 20px;
+    background-color: rgb(244, 246, 248);
+    border-radius: 10px;
+    min-height: 100%;
+}
+.fundo2 > p:first-child{
+    margin-top: 0px
+}
+.fundo2 > p:last-child{
+    margin-bottom: 0px
+}
+
+.bold{
+    font-weight:100;
+}
+.tamanho{
+    font-size: 10px;
+}
+.titulinho{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.espaco{
+    padding: 15px;
+    /* padding-bottom: 10px; */
+    text-align: left;
+}
+
+.container-card{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.pop{
+    color: white;
+    background-image: url("https://png.pngtree.com/element_our/md/20180427/md_cd4d3678b559da4b2609bb5442454d47.jpg");
+    background-size: cover;
+    min-height: 100%;
+    padding: 200px 20px 20px 20px;
+    border-radius: 10px;
+}
+.fundo3{
+    background-color: rgb(244, 246, 248);
+    border-radius: 10px;
+}
+button{
+ color: white;
+ background: none;
+ border-radius: 10px;
+ border-color: white;
+}
+
+.rosa{
+    font-family: Arial;
+    font-weight: bold;
+    color: rgb(255, 57, 90);
+    font-size: 50px;
+}

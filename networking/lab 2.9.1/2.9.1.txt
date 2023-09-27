@@ -1,0 +1,48 @@
+!colocando nome no switch
+(en --> config t)
+hostname Class-A
+!colocando a senha console
+line console 0
+password R4Xe3
+login
+!colocando a senha modo privilegiado
+enable password R4Xe3
+!colocando a senha modo privilegiado com criptografia
+enable secret C4aJa
+!criptografando todas as futuras, atuais senhas
+service password-encryption
+ctrl shift 6-> voltar
+!configuração de senha telnet
+line vty 0 4
+password R4Xe3 
+login
+!ativando a mensagen de banner para o acesso console/telnet
+banner motd #AREA RESTRITA - WARNING#
+!configuração de IP para gerenciamento remoto do switch
+interface  VLAN 1
+ip address 172.16.5.35 255.255.255.0
+no shutdown
+
+!colocando nome no switch
+hostname Class-B
+!colocando a senha console
+line console 0
+password R4Xe3
+login
+!colocando a senha modo privilegiado
+enable password R4Xe3
+!colocando a senha modo privilegiado com criptografia
+enable secret C4aJa
+!criptografando todas as futuras, atuais senhas
+service password-encryption
+ctrl shift 6-> voltar
+!configuração de senha telnet
+line vty 0 4
+password R4Xe3 
+login
+!ativando a mensagen de banner para o acesso console/telnet
+banner motd #AREA RESTRITA - WARNING#
+!configuração de IP para gerenciamento remoto do switch
+interface  VLAN 1
+ip address 172.16.5.40 255.255.255.0
+no shutdown

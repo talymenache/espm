@@ -1,0 +1,61 @@
+<script>
+    let nome = new Array(5)
+    let venda = new Array(nome.length)
+    let mes =["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"]
+    let maiorVenda = 0
+    let linhaMaiorVenda = 0
+    let linhaMenorvenda = 0
+    let menorVenda = Infinity
+    
+    for (let i = 0; i < nome.length; i++) {
+        nome[i] = prompt("Nome do vendedor")
+        venda[i] = new Array(6)
+        for(let j = 0; j < venda[i].length; j++){
+            venda[i][j] = parseInt(Math.random() * 10)
+        }
+    }
+    
+    console.table(nome);
+    console.table(venda);
+
+        // soma das vendas por vendedor
+    console.log("Total de vendas por vendedor")
+    let soma
+    for(let i=0; i < venda.length; i++) {
+        soma = 0
+        for(let j=0; j < venda[i].length; j++) {
+            soma = soma + venda[i][j]
+        }
+        console.log(nome[i] + " --> R$ " + soma.toFixed(2))
+
+        // descobrir a maior venda
+        if(soma > maiorVenda) {
+            maiorVenda = soma
+            somalinhaMaiorVenda = i
+        }
+
+        // descobrir a menor venda
+        if(soma < menorVenda) {
+            menorVenda = soma
+            somalinhaMenorvalor = i
+        }
+    }
+
+    // total de vendas por mês
+    console.log("\nTotal de vendas por mês")
+    for(let j=0; j < mes.length; j++) {
+        let soma = 0
+        for(let i=0; i < venda.length; i++) {
+
+            soma = soma + venda[i][j]
+        }
+        console.log(mes[j] + " --> R$ " + soma.toFixed(2))
+    }
+
+
+    // impressão do vendedor 
+    console.log("\nVendedor com a maior venda --> " + nome[linhaMaiorVenda])
+    console.log("\nVendedor com a menor venda --> " + nome[linhaMenorvenda])
+    
+  </script>
+  

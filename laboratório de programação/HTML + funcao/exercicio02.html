@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exercicio02.js"></script>
+
+    <link rel="stylesheet" href="estilo_form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+    <div class="limitador">
+        <h1>Revendedora de Veículos</h1>
+        <label for="modelo">Modelo do Veículo</label>
+        <input type="number" id="modelo" name="modelo">
+        <p></p>
+        <label for="preco">Preço do Veículo</label>
+        <input type="number" id="preco" name="preco">
+        <p id = "saida1"></p>
+        <p id = "saida2"></p>
+        <button onclick="calcular()">Financiamento</button>
+    </div>
+</body>
+</html>

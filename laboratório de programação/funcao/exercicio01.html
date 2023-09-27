@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<script>
+
+    let valor
+    valor = parseInt(prompt("Digite um valor inteiro e positivo: "))
+
+    if(valor<=0) {
+       alert("Valor inválido!")
+      valor = parseInt(prompt("Digite um valor inteiro e positivo: "))
+        }
+    else {
+        divisor()
+    }
+        
+    function divisor() {
+        for(let cont = 1; cont <= valor; cont++) {
+            if(valor % cont == 0){
+                console.log(cont)
+            }
+        }
+    }
+
+</script>

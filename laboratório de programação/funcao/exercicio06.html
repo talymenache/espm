@@ -1,0 +1,27 @@
+<script>
+
+let lista = new Array(10)
+
+preencher(lista)
+imprimir(lista)
+inverter(lista)
+imprimir(lista)
+
+function preencher(lista) {
+        for(let i=0; i < lista.length; i++) {
+            lista[i] = parseInt(Math.random() * 50)
+        }
+}
+function imprimir(lista){
+        console.log(lista)
+}
+function inverter(lista){
+    for(let i=0; i< lista.length / 2; i++){
+        let aux
+        aux = lista[i]
+        lista[i] = lista[(lista.length - 1) -i]
+        lista[(lista.length - 1) - i] = aux
+    }
+}
+
+</script>

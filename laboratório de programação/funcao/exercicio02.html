@@ -1,0 +1,33 @@
+<meta charset="UTF-8" />
+<script>
+
+    let valor1, valor2, valor3
+    valor1 = Number(prompt("Digite o primeiro valor: "))
+    valor2 = Number(prompt("Digite o segundo valor: "))
+    valor3 = Number(prompt("Digite o terçeiro valor: "))
+
+    if(validar()== true) {
+        classificar()
+    }
+    else {
+        alert("Os valores não formam um triângulo")
+    }
+
+    function validar() {
+        if(valor1 + valor2 > valor3 || valor1 + valor3 > valor2 || valor2 + valor3 > valor1) {
+            return true
+        } 
+        return false
+    }
+
+    function classificar() {
+        if(valor1 == valor2 && valor2 == valor3) {
+            alert("Triângulo equilátero")
+        } else if(valor1 == valor2 || valor2 == valor3 || valor1 == valor3) {
+            alert("Triângulo isósceles")
+        } else if(valor1 != valor2 != valor3){
+            alert("Triângulo escaleno")
+        }
+    }
+
+</script>

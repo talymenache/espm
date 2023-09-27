@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: darkgray;
+    font-weight: 500;
+}
+.limitador {
+    max-width: 50%;
+    margin: 0 auto; /* centralizacao na horizontal */
+    background-color:rgb(247, 247, 225);
+}
+h1{
+    background: rgb(228, 197, 231);
+    text-align: center;
+    font-family: 'Montserrat';
+}

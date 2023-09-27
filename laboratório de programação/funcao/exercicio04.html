@@ -1,0 +1,37 @@
+<script>
+    let a, b, c
+    a = Number(prompt("Valor de a: "))
+    b = Number(prompt("Valor de b: "))
+    c = Number(prompt("Valor de c: "))
+
+    function calcularDelta() {
+        let delta
+        delta = (b*b) -4*a*c
+        return delta
+    } 
+
+    function calcularRaiz1() {
+        let xpositivo
+        xpositivo = (-b + Math.sqrt(delta)) / 2*a
+        return xpositivo
+    } 
+
+    function calcularRaiz2() {
+        let xnegativo
+        xnegativo = (-b - Math.sqrt(delta)) / 2*a
+        return xnegativo
+    } 
+
+    let delta = calcularDelta()
+    if(delta < 0) {
+        alert("A equação não tem raiz real")
+    } else {
+        alert("Delta = " + delta)
+
+        let xpositivo = calcularRaiz1()
+        let xnegativo = calcularRaiz2()
+        alert("Primeiro valor de x= " + xnegativo + "\nSegundo valor de x= " + xpositivo)
+
+    }
+    
+</script>

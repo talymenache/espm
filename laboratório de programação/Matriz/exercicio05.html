@@ -1,0 +1,29 @@
+<script>
+// Escreva um programa em JavaScript que preencha um matriz quadrada de ordem 5
+// com valores aleatórios. Em seguida, troque os elementos da diagonal principal com
+// os elementos da diagonal secundária. Como exemplo, considere a matriz quadrada
+// de ordem 3.
+
+    let m = new Array(3)
+
+    for(let i=0; i< m.length; i++) {
+        m[i] = new Array(3)
+        for(let j = 0; j<m.length; j++){
+            m[i][j] = parseInt(Math.random() * 11)
+        }
+    }
+
+    console.table(m)
+
+    let j = m.length -1, aux
+    for(let i = 0; i<m.length; i++) {
+        aux = m[i][i]
+        m[i][i] = m[i][j]
+        m[i][j] = aux
+        j--
+    }
+
+    console.log
+    console.table(m)
+
+</script>
