@@ -1,0 +1,67 @@
+body {
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    background: #E5E8F1;
+    color: #09235B;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: Nunito;
+    
+    background: #EEEEEE;
+    color: #09235B;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 9px;
+}
+
+.direita {
+    text-align: right;
+}
+
+.meio {
+    text-align: center;
+}
+
+.sub-titulo {
+    color: #324777;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.botao {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: Nunito;
+}
+
+.traço:hover {
+    text-decoration: underline;
+}
+
+.resposta {
+    font-family: Montserrat;
+    font-size: 20px;  
+}
+
+.limitador {
+    max-width: 1200px;
+    margin: 0px auto;
+}

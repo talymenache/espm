@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de CPF</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <link href="estilo.css" rel="stylesheet" />
+    <script src="back.js"></script>
+</head>
+<body>
+    <div class="limitador">
+        <h1>Cadastros de Clientes <span class="direita"> - Serviço Online</span></h1>
+
+        <p></p>
+        <p class="sub-titulo"> <span class="traço" onmouseover="amrmazene()" onmouseout="sai()">ARMAZENE</span> | <span class="traço" onmouseover="pesquise()" onmouseout="sai()">PESQUISE</span> | <span class="traço" onmouseover="altera()" onmouseout="sai()">ALTERE</span> | <span class="traço" onmouseover="remove()" onmouseout="sai()">REMOVA</span> | <span class="traço" onmouseover="liste()" onmouseout="sai()">LISTE</span></p>
+        <p id="explicacao"></p>
+
+        <h2>Faça seu cadastro e confira o que quiser</h2>
+
+        <div class="conteiner-fluid">
+            <div class="row">
+                <div class="col-8">
+        <label for="cpf">CPF do cliente: </label>
+        <input type="number" id="cpf" name="cpf"/>
+        <p></p>
+
+        <label for="nome">Nome do cliente: </label>
+        <input type="text" id="nome" name="nome"/>
+        <p></p>
+
+        <label for="megabytes">Megabytes extra do último mês: </label>
+        <input type="number" id="megabytes" name="megabytes" />
+        <p></p>
+        <p></p>
+
+        <button class="botao" onclick="cadastrar()">Armazenar</button>
+        <button class="botao" onclick="pesquisar()">Pesquisar</button>
+        <button class="botao" onclick="alterar()">Alterar</button>
+        <button class="botao" onclick="remover()">Remover</button>
+        <button class="botao" onclick="lista()">Lista</button>
+        <!-- <button class="botao" onclick="atualizar()">Atualizar</button> -->
+        
+        <p></p>
+
+        <p id="saida" class="resposta"></p>
+        
+        </div class="col-8 direita">
+        <img width="400px" src="./imagem/carinha.png">
+        </div>
+    </div>
+
+
+        <div class="conteiner-fluid">
+            <div class="row">
+                <div class="col-6">
+                <h1>Armazenados</h1>
+                <table border="1">
+                    <thead>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Megabytes</th>
+                    </thead>
+                    <tbody id="tabela"></tbody>
+                </table>
+                </div>
+            
+                <div class="col-6">
+                <h1>Resultado da Pesquisa</h1>
+                <table border="1">
+                    <thead>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Megabytes</th>
+                        <th>Devendo</th>
+                    </thead>
+                    <tbody id="pesquisa"></tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+        <p></p>
+
+                <h1 class="meio">Lista</h1>
+                <table border="1">
+                    <thead>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Megabytes</th>
+                        <th>Devendo</th>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+
+    </div>
+</body>
+</html>
